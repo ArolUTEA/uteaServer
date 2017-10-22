@@ -1,0 +1,44 @@
+<template name="listaMatricole">
+  <h2>Tabella Matricole!!</h2>
+
+  <form class="info-matricola-add">
+  <table class="table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Matricola</th>
+        <th>Modello</th>
+        <th>Cliente </th>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" name="matricola" placeholder="Matricola" required>
+        </td>
+        <td>
+          <input type="text" name="modello" placeholder="Modello" required>
+        </td>
+        <td>
+          <input type="text" name="cliente" placeholder="Cliente" required>
+          <input type="submit" class="btn-sm btn-success" name="submit" value="+">
+        </td>
+      </tr>
+
+    </thead>
+    <tbody>
+      {{#each matricole}}
+        {{> matricola}}
+      {{/each}}
+    </tbody>
+  </table>
+  </form>
+
+</template>
+
+
+<template name="matricola">
+  <tr class="record-matricola">
+    <td class="matricola">{{matricola}}</td>
+    <td class="modello">{{modello}}</td>
+    <td class="cliente">{{cliente}}</td>
+  </tr>
+</template>
