@@ -1,7 +1,6 @@
 # UTEA server
 
 Questo è un progetto a scopo _privato_. Viene mantenuto su __GitHub__ per i soli scopi di gestione delle revisioni e condivisione del sorgente in open-source.
-=======
 
 
 ## Una WebApp per utilizzo interno
