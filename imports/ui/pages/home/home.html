@@ -1,12 +1,14 @@
 <template name="App_home">
   <div class="container">
-    <!-- <div class="page-header text-center well well-sm">
-      <h1>UTEA Internal Server</h1>
-      <p>La visualizzazione è libera, le modifiche sono effettuate da personale autorizzato</p>
-    </div> -->
     <main>
+      <h1>Tabella delle Matricole</h1>
+      <p>Lista delle matricole gestite dall'ufficio UTEA.
+        Non sono presenti matricole che non contengono almeno una
+        componentistica elettrica.</p>
+        <hr>
+        {{exampleHelper}}
+        <hr>
       {{> listaMatricole}}
-      
     </main>
   </div>
 <!--
